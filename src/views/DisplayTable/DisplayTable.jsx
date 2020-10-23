@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Table } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
-import './styles.css';
 import { useSort } from '../../hooks/useSort';
+import './styles.css';
 
 const DisplayTable = ({ assets }) => {
 	const keys = Object.keys(assets[0]);
 	const [list, setList] = useState(assets);
+	/* sort logic is added in useSort custom hook */
 	const { items, requestSort, sortConfig } = useSort(list);
 
 	const getClassNamesFor = (name) => {
@@ -19,6 +21,7 @@ const DisplayTable = ({ assets }) => {
 		const updatedList = assets.filter((list) => {
 			return list[`${key}`].toString().toLowerCase().search(e.target.value.toString().toLowerCase()) !== -1;
 		});
+		/*updating the return data based on the filtered inputs*/
 		setList(updatedList);
 	};
 
@@ -30,6 +33,7 @@ const DisplayTable = ({ assets }) => {
 		if (localStorage.getItem(asset.id)) {
 			localStorage.removeItem(asset.id);
 		} else {
+			/*adding favorite item details to local storage*/
 			localStorage.setItem(asset.id, JSON.stringify(asset));
 		}
 	};
@@ -71,8 +75,13 @@ const DisplayTable = ({ assets }) => {
 							<td>{asset.lastUpdate}</td>
 							<td>{asset.type}</td>
 							<td>
-								<button type='button' className='favorite' onClick={() => handleFavorites(asset)}>
-									{!!localStorage.getItem(asset.id) ? '🤍' : '🖤'}
+								<button
+									type='button'
+									className='favorite'
+									data-test-id='favorite'
+									onClick={() => handleFavorites(asset)}
+								>
+									{!!localStorage.getItem(asset.id) ? '❤' : '🤍'}
 								</button>
 							</td>
 						</tr>
@@ -84,3 +93,7 @@ const DisplayTable = ({ assets }) => {
 };
 
 export { DisplayTable };
+
+DisplayTable.propTypes = {
+	assets: PropTypes.arrayOf(PropTypes.object)
+};

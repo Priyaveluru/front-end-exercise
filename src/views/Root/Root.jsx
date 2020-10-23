@@ -37,6 +37,7 @@ const Root = () => {
 		});
 	};
 
+	/* calling updateAssets function for every 1 second*/
 	setInterval(() => {
 		const updatedAssets = updateAssets();
 		setAssets(updatedAssets);
