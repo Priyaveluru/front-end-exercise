@@ -12,17 +12,28 @@ The Single page application is created in the following way:
 
 Upon clicking on the table header we can sort the data to ascending and descending order
 
+<img src="https://i.ibb.co/JdJ0fzF/Screen-Shot-2020-10-23-at-2-52-52-PM.png" alt="Screen-Shot-2020-10-23-at-2-52-52-PM" border="0">
 <img src="https://i.ibb.co/sgGGnVy/Screen-Shot-2020-10-23-at-2-20-10-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-10-PM" border="0">
 
-Create filters on each individual value of an asset
+Created filters on each individual value of an asset:
 
-<img src="https://i.ibb.co/yfbv755/Screen-Shot-2020-10-23-at-2-19-58-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-58-PM" border="0">
+<img src="https://i.ibb.co/yfbv755/Screen-Shot-2020-10-23-at-2-19-58-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-58-PM" border="0" height=90px">
 
-We can also favorite a particular asset using the follwing icon:
+We can also favorite or unfavorite a particular asset using the follwing icons:
 
-<img src="https://i.ibb.co/fYJjHRz/Screen-Shot-2020-10-23-at-2-20-25-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-25-PM" border="0" display="inline-block">
-<img src="https://i.ibb.co/F0pBGh5/Screen-Shot-2020-10-23-at-2-20-31-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-31-PM" border="0" display="inline-block">
+<div>
+<img src="https://i.ibb.co/fYJjHRz/Screen-Shot-2020-10-23-at-2-20-25-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-25-PM" border="0" height="80px">
+<img src="https://i.ibb.co/s6LFdsN/Screen-Shot-2020-10-23-at-2-58-55-PM.png" alt="Screen-Shot-2020-10-23-at-2-58-55-PM" border="0" height="80px">
+</div>
 
 We are adding the favorite assets to local storage
 
 <img src="https://i.ibb.co/W3FB12b/Screen-Shot-2020-10-23-at-2-21-46-PM.png" alt="Screen-Shot-2020-10-23-at-2-21-46-PM" border="0">
+
+<b>Tech Stack:</b> React.js, JavaScript, HTML5,CSS, react-testing-library
+
+<b>Commands to run the application:</b>
+
+ yarn install
+ 
+ yarn start 
