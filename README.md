@@ -2,6 +2,18 @@
 
 As part of this Project, I have created 400 random assets, 200 currencies and 200 stocks (It's just dummy data) from id 1-400
 
+Each indiviual asset contains follwing information:
+
+```
+ interface Asset {
+	id: number
+	assetName: string; // "USD", Samsung Electronics Co Ltd : "SSNLF"
+	price: number; // asset current price relative to USD
+	lastUpdate: number; // unix timestamp
+	type: "Currency" | "Stock"; // asset type Currency (e.g. USD, EUR...) or Stock (Samsung, Google)
+}
+```
+
 Create a stream from those 400 assets which fires 1 update per secound for each asset:
 
 price must be changed each update by -1 to 1 and with the current timestamp, the rest will stay the same
