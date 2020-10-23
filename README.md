@@ -14,7 +14,7 @@ Each indiviual asset contains follwing information:
 }
 ```
 
-Create a stream from those 400 assets which fires 1 update per secound for each asset:
+Created a stream from those 400 assets which fires 1 update per secound for each asset:
 
 price must be changed each update by -1 to 1 and with the current timestamp, the rest will stay the same
 
