@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#FRONT_END_EXERCISE
 
-## Available Scripts
+As part of this Project, I have created 400 random assets, 200 currencies and 200 stocks (It's just dummy data) from id 1-400
 
-In the project directory, you can run:
+Each indiviual asset contains follwing information:
 
-### `yarn start`
+```
+ interface Asset {
+	id: number
+	assetName: string; // "USD", Samsung Electronics Co Ltd : "SSNLF"
+	price: number; // asset current price relative to USD
+	lastUpdate: number; // unix timestamp
+	type: "Currency" | "Stock"; // asset type Currency (e.g. USD, EUR...) or Stock (Samsung, Google)
+}
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Created a stream from those 400 assets which fires 1 update per secound for each asset:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+price must be changed each update by -1 to 1 and with the current timestamp, the rest will stay the same
 
-### `yarn test`
+The Single page application is created in the following way:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.ibb.co/ZWL9Ds9/Screen-Shot-2020-10-23-at-2-19-40-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-40-PM" border="0">
 
-### `yarn build`
+Upon clicking on the table header we can sort the data to ascending and descending order
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://i.ibb.co/JdJ0fzF/Screen-Shot-2020-10-23-at-2-52-52-PM.png" alt="Screen-Shot-2020-10-23-at-2-52-52-PM" border="0">
+<img src="https://i.ibb.co/sgGGnVy/Screen-Shot-2020-10-23-at-2-20-10-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-10-PM" border="0">
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Created filters on each individual value of an asset:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://i.ibb.co/yfbv755/Screen-Shot-2020-10-23-at-2-19-58-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-58-PM" border="0" height="50px">
 
-### `yarn eject`
+We can also favorite or unfavorite a particular asset using the follwing icons:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<div>
+<img src="https://i.ibb.co/fYJjHRz/Screen-Shot-2020-10-23-at-2-20-25-PM.png" alt="Screen-Shot-2020-10-23-at-2-20-25-PM" border="0" height="80px">
+<img src="https://i.ibb.co/s6LFdsN/Screen-Shot-2020-10-23-at-2-58-55-PM.png" alt="Screen-Shot-2020-10-23-at-2-58-55-PM" border="0" height="80px">
+</div>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We are adding the favorite assets to local storage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="https://i.ibb.co/W3FB12b/Screen-Shot-2020-10-23-at-2-21-46-PM.png" alt="Screen-Shot-2020-10-23-at-2-21-46-PM" border="0">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<b>Tech Stack:</b> React.js, JavaScript, HTML5,CSS3, react-testing-library
 
-## Learn More
+<b>Commands to run the application:</b>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ yarn install
+ 
+ yarn start 
