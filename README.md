@@ -17,7 +17,7 @@ Upon clicking on the table header we can sort the data to ascending and descendi
 
 Created filters on each individual value of an asset:
 
-<img src="https://i.ibb.co/yfbv755/Screen-Shot-2020-10-23-at-2-19-58-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-58-PM" border="0" height=90px">
+<img src="https://i.ibb.co/yfbv755/Screen-Shot-2020-10-23-at-2-19-58-PM.png" alt="Screen-Shot-2020-10-23-at-2-19-58-PM" border="0" height="50px">
 
 We can also favorite or unfavorite a particular asset using the follwing icons:
 
