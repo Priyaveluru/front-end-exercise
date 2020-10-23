@@ -1,0 +1,29 @@
+thead button {
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	border-radius: none;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: #95999c;
+}
+
+thead button.ascending::after {
+	content: '👇';
+	display: inline-block;
+	border-radius: 4px;
+}
+
+thead button.descending::after {
+	content: '☝️';
+	display: inline-block;
+	border-radius: 4px;
+}
+
+thead input {
+	border-radius: 4px;
+}
+
+tbody td button {
+	background-color: #95999c;
+}
