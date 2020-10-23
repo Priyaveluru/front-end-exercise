@@ -30,7 +30,7 @@ We are adding the favorite assets to local storage
 
 <img src="https://i.ibb.co/W3FB12b/Screen-Shot-2020-10-23-at-2-21-46-PM.png" alt="Screen-Shot-2020-10-23-at-2-21-46-PM" border="0">
 
-<b>Tech Stack:</b> React.js, JavaScript, HTML5,CSS, react-testing-library
+<b>Tech Stack:</b> React.js, JavaScript, HTML5,CSS3, react-testing-library
 
 <b>Commands to run the application:</b>
 
